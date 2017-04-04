@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python
-
 REF_ = ['CREATE','TABLE','SELECT','*','FROM','INSERT','INTO','WHERE','NOT','VALUES','DELETE_', 'UPDATE_']
 ERROR_ = ['database file not find error!','connect error!']
 
@@ -237,7 +236,6 @@ def execute(command, *values):
         #print if_
     if command[0] == 'SELECT' and command[1] == "*" and command[2] == 'FROM':
         table = command[3]
-        
         if 'WHERE' in command:
             if len(sort) == 0:
                 for id in range(1, count(table)+1, +1):
@@ -270,6 +268,3 @@ def execute(command, *values):
                 for id in range(1, count(table)+1, +1):
                     select.append(gets(table, id))
                 return select  
-                
-                
-                
