@@ -17,4 +17,4 @@ m2sql.DELETE_('test', ID) #test -> tablo
 m2sql.UPDATE_(ID, m2sql.table, 'yasi', 1)
 
 #m2sql.table --> işlem yapılacak aktif tablo
-#ID --> değişiklik yapılacak kayıt, yasi(int) -> tablodaki sutun, 1 (int) --> yeni değer 
+#ID --> değişiklik yapılacak kayıt, yasi -> tablodaki sutun, 1 (int) --> yeni değer 
