@@ -14,7 +14,7 @@ for veritabani in m2sql.execute('SELECT * FROM test'):
 m2sql.DELETE_(m2sql.table, ID)
 m2sql.DELETE_('test', ID) #test -> tablo
 
-m2sql.UPDATE_(ID, m2sql.table, 'isim', 'yeni isim') 
 m2sql.UPDATE_(ID, m2sql.table, 'yasi', 1)
 
-#ID --> değişiklik yapılacak kayıt, yasi -> tablodaki sutun, 1 (int) --> yeni değer 
+#m2sql.table --> işlem yapılacak aktif tablo
+#ID --> değişiklik yapılacak kayıt, yasi(int) -> tablodaki sutun, 1 (int) --> yeni değer 
